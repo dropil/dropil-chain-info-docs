@@ -59,7 +59,7 @@ Once you ensure your full node is caught up, run the following command:
 dropcli tx staking create-validator --chain-id dropilchain --from <KEYNAME> --moniker <MONIKER> --pubkey <VALIDATOR_PUB_KEY> --amount <AMOUNT>udrop --fees <FEE>udrop --min-self-delegation <MIN_SELF_DELEGATION> --commission-rate <COMMISSION_RATE> --commission-max-change-rate <COMMISSION_MAX_CHANGE_RATE> --commission-max-rate <COMMISSION_MAX_RATE>
 ```
 
-***Note: Testnet chain-id is `dropilchain-testnet`***
+***Note: Testnet chain-id is `Dropil-Chain-Poseidon`***
 
 ### Parameters to Replace ###
 Replace the parameters inside the <> blocks (including the braces) with the following required information:
@@ -92,7 +92,7 @@ Here is an example of a filled out `create-validator` transaction with placehold
 dropcli tx staking create-validator --chain-id dropilchain --from Example-Keyname --moniker Example-Moniker --pubkey dropvalconspub1zcjduepqc30usk2rqjclw57dkufah842vf0623ar85j5ktt9p9gk7q3gqknqqmlt6g --amount 1000000000000udrop --fees 2000000udrop --min-self-delegation 1 --commission-rate 0.05 --commission-max-change-rate 0.01 --commission-max-rate 0.50
 ```
 
-***Note: Testnet chain-id is `dropilchain-testnet`***
+***Note: Testnet chain-id is `Dropil-Chain-Poseidon`***
 
 The above will create a validator using the `Example-Keyname` key and the `Example-Moniker` moniker with 1,000,000 self delegated Drops, a minimum self delegation of 1 Drop, a commission rate of 5%, a maximum daily commission rate change of 1%, and a maximum commission of 50%.
 

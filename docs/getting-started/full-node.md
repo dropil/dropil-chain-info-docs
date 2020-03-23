@@ -15,7 +15,7 @@ dropd init <MONIKER> --chain-id dropilchain
 
 Replace `<MONIKER>` with an identifier of your choosing (i.e `my-dropil-chain-node`).
 
-***Testnet chain-id is `dropilchain-testnet`***
+***Testnet chain-id is `Dropil-Chain-Poseidon`***
 
 This will create the previously mentioned .dropd folder in your C:\ drive or root directory of your computer/server.
 
@@ -37,15 +37,15 @@ We will add trusted seeds when mainnet is launched.
 ### Trusted Testnet Validator Seeds ###
 This is a list of testnet seeds you can connect to that are considered trusted by most people including Dropil.
 
-* dropil-testnet-validator-1: `512f115566a9957da91a15ce91537ae41ef6324e@147.135.37.119:26656`
-* dropil-testnet-validator-2: `f3c64b4ddb0eaa274b03a4b7a62b38670d30afb7@147.135.37.118:26656`
-* dropil-testnet-validator-3: `5b3030d37d4883d672a716f8887ef477d378593a@147.135.37.208:26656`
-* dropil-testnet-validator-4: `341988b34334e2dcac9ef5c41d7d9eb811398314@147.135.37.233:26656`
+* dropil-testnet-validator-1: `2fd3136f597762129cef11847f30f7e86370331d@147.135.37.119:26656`
+* dropil-testnet-validator-2: `f04587f8e81dc6021afbd962a5fa6ad64d059825@147.135.37.118:26656`
+* dropil-testnet-validator-3: `4d361d3089212a7824fdb17da3534b0c886ca81c@147.135.37.208:26656`
+* dropil-testnet-validator-4: `dae0a49e8c3828df21072469c01c81373e59c708@147.135.37.233:26656`
 
 Example `--p2p.seeds` string:
 
 ```
-512f115566a9957da91a15ce91537ae41ef6324e@147.135.37.119:26656,f3c64b4ddb0eaa274b03a4b7a62b38670d30afb7@147.135.37.118:26656,5b3030d37d4883d672a716f8887ef477d378593a@147.135.37.208:26656,341988b34334e2dcac9ef5c41d7d9eb811398314@147.135.37.233:26656
+2fd3136f597762129cef11847f30f7e86370331d@147.135.37.119:26656,f04587f8e81dc6021afbd962a5fa6ad64d059825@147.135.37.118:26656,4d361d3089212a7824fdb17da3534b0c886ca81c@147.135.37.208:26656,dae0a49e8c3828df21072469c01c81373e59c708@147.135.37.233:26656
 ```
 
 ## Node Syncing ##

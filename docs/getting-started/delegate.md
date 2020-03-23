@@ -79,7 +79,7 @@ Finally, let us set the `chain-id` of the blockchain we want to interact with:
 dropcli config chain-id dropilchain
 ```
 
-_testnet chain-id is `dropilchain-testnet`_
+_testnet chain-id is `Dropil-Chain-Poseidon`_
 
 ## Querying the State
 
