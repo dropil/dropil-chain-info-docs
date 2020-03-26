@@ -69,8 +69,8 @@ Replace the parameters inside the <> blocks (including the braces) with the foll
 * **VALIDATOR_PUB_KEY**: This is the result of the command `dropd tendermint show-validator` that you ran in the previous step. The address will be in the `dropvalconspub` format.
 * **AMOUNT**: Amount of Drops to self delegate for staking represented in udrop (1 Drop = 1,000,000 udrop)
 * **FEE**: The fee paid for the current transaction.
-  * Recommended: `2000000`udrop (2 Drops)
-* **MIN_SELF_DELEGATION**: A stritly positive integer that represents the minimum amount of self-delegated voting power your validator must always have. A min-self-delegation of 1 means your validator will never have a self-delegation lower than 1drop, or 1000000udrop.
+  * Recommended: `20000`udrop (0.02 Drops)
+* **MIN_SELF_DELEGATION**: A stritly positive integer that represents the minimum amount of self-delegated voting power your validator must always have. A min-self-delegation of 1 means your validator will never have a self-delegation lower than 1 Drop, or 1000000udrop.
 
 The following parameters cannot be changed after creating a validator. Commission rates are one of the top factors that delegators consider before choosing a validator to delegate their Drops to.
 
@@ -89,12 +89,12 @@ dropcli tx staking create-validator -h
 Here is an example of a filled out `create-validator` transaction with placeholder information:
 
 ```
-dropcli tx staking create-validator --chain-id dropilchain --from Example-Keyname --moniker Example-Moniker --pubkey dropvalconspub1zcjduepqc30usk2rqjclw57dkufah842vf0623ar85j5ktt9p9gk7q3gqknqqmlt6g --amount 1000000000000udrop --fees 2000000udrop --min-self-delegation 1 --commission-rate 0.05 --commission-max-change-rate 0.01 --commission-max-rate 0.50
+dropcli tx staking create-validator --chain-id dropilchain --from Example-Keyname --moniker Example-Moniker --pubkey dropvalconspub1zcjduepqc30usk2rqjclw57dkufah842vf0623ar85j5ktt9p9gk7q3gqknqqmlt6g --amount 1000000000000udrop --fees 20000udrop --min-self-delegation 1 --commission-rate 0.05 --commission-max-change-rate 0.01 --commission-max-rate 0.50
 ```
 
 ***Note: Testnet chain-id is `Dropil-Chain-Poseidon`***
 
-The above will create a validator using the `Example-Keyname` key and the `Example-Moniker` moniker with 1,000,000 self delegated Drops, a minimum self delegation of 1 Drop, a commission rate of 5%, a maximum daily commission rate change of 1%, and a maximum commission of 50%.
+The above will create a validator using the `Example-Keyname` key and the `Example-Moniker` moniker with 1,000,000 self delegated Drops, a minimum self delegation of 1 Drop, a commission rate of 5%, a maximum daily commission rate change of 1%, and a maximum commission of 50%. The fee paid for the transaction will be 0.02 DROP.
 
 ## Congratulations! ##
 You have now applied to be a validator. For more information on how validators are chosen, visit the [validators article](/info/validators).
