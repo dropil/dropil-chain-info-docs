@@ -1,7 +1,17 @@
 module.exports = {
-  title: 'Dropil Chain Documentation',
+  title: 'Dropil Chain Documentation',  
   base: '/info/',
   dest: '../Dropil Chain Docs/info',
+  head: [
+    ['meta', { property: 'og:title', content: 'Dropil Chain Documentation' }],
+    ['meta', { property: 'og:description', content: 'Learn about Dropil Chain and how to utilize the Dropil Chain Daemon and Dropil Chain CLI.' }],
+    ['meta', { property: 'og:image', content: 'https://dropil.com/wp-content/uploads/2020/04/dropil-docs-meta.jpg' }],
+    ['meta', { property: 'og:url', content: 'https://docs.dropilchain.com' }],
+    ['meta', { name: 'twitter:title', content: 'Dropil Chain Documentation' }],
+    ['meta', { name: 'twitter:description', content: 'Learn about Dropil Chain and how to utilize the Dropil Chain Daemon and Dropil Chain CLI.' }],
+    ['meta', { name: 'twitter:image', content: 'https://dropil.com/wp-content/uploads/2020/04/dropil-docs-meta.jpg' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
+  ],
   plugins: [
     ['@vuepress/google-analytics', {
       'ga': 'UA-160632572-1'
@@ -26,7 +36,8 @@ module.exports = {
               { text: 'Public API Docs', link: 'https://docs.dropilchain.com/api/'},
               { text: 'Mainnet Explorer', link: 'https://explorer.dropilchain.com' },
               { text: 'Testnet Explorer', link: 'https://testnet-explorer.dropilchain.com' },
-              { text: 'Staking Calculator', link: 'https://dropilchain.com/calc' }
+              { text: 'Zeli Wallet', link: 'https://zeli.dropilchain.com' },
+              { text: 'Staking Calculator', link: 'https://calc.dropilchain.com' }
             ]
           },
           {
@@ -64,6 +75,7 @@ module.exports = {
             '/dropilchain-pos',
             '/validators',
             '/delegators',
+            '/governance',
             '/other'
           ]
         }

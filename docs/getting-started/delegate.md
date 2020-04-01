@@ -127,3 +127,5 @@ For each command, you can use the `-h` or `--help` flag to get more information.
 ::: warning
 **Before bonding Drops, please read the delegator faq to understand the risk and responsibilities involved with delegating**
 :::
+
+This section of the docs is not complete.

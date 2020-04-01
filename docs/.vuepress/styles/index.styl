@@ -1,54 +1,9 @@
 @font-face {
-  font-family: 'TiemposHeadline';
-  font-weight: 400;
-  src: url('/info/fonts/TiemposHeadline-Regular.otf');
-}
-
-@font-face {
-  font-family: 'TiemposHeadline';
-  font-weight: 600;
-  src: url('/info/fonts/TiemposHeadline-Medium.otf');
-}
-
-@font-face {
   font-family: 'Lato';
   src: url('/info/fonts/Lato-Regular.woff') format('woff'), url('/info/fonts/Lato-Regular.woff2') format('woff2'), url('/info/fonts/Lato-Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: normal;
-  src: url('/info/fonts/SourceSansPro-Light.woff') format('woff'), url('/info/fonts/SourceSansPro-Light.woff2') format('woff2'), url('/info/fonts/SourceSansPro-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: normal;
-  src: url('/info/fonts/SourceSansPro-Regular.woff') format('woff'), url('/info/fonts/SourceSansPro-Regular.woff2') format('woff2'), url('/info/fonts/SourceSansPro-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: normal;
-  src: url('/info/fonts/SourceSansPro-SemiBold.woff') format('woff'), url('/info/fonts/SourceSansPro-SemiBold.woff2') format('woff2'), url('/info/fonts/SourceSansPro-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-  src: url('/info/fonts/SourceSansPro-Bold.woff') format('woff'), url('/info/fonts/SourceSansPro-Bold.woff2') format('woff2'), url('/info/fonts/SourceSansPro-Bold.ttf') format('truetype');
-}
-
 $font-family-base = 'Lato';
-$font-family-alt = 'TiemposHeadline';
 $font-size-small = 15px;
 $font-size-base = 16px;
 
@@ -87,7 +42,7 @@ html, body {
   h1 {
     color: #203d8c;
     font-size: 1.75rem;
-    font-family: $font-family-alt;
+    font-family: $font-family-base;
 
     @media (min-width: 480px) {
       font-size: 2rem;
