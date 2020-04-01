@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: http://dropilchain.com/wp-content/uploads/2020/02/dropilchain-greyed.png
+heroImage: https://dropil.com/wp-content/uploads/2020/04/dropil-docs-meta.jpg
 heroText: Dropil Chain Documentation
 tagline: Learn about Dropil Chain and how to utilize the Dropil Chain Daemon and Dropil Chain CLI.
 actionText: Get Started →
